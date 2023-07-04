@@ -27,35 +27,44 @@
             <h1 class="h1preguntas">Preguntas Frecuentes</h1>
             <p class="ppreg">Si tienes dudas o necesitas consultar algo, puedes llamar al <b class="spanpreg">801 00 45
                     810</b></p>
-        </div>
-        <div class="faq">
-            <div class="question">¿Pregunta 1?</div>
-            <div class="answer">Respuesta a la pregunta 1.</div>
+            <div class="faq">
+                <div class="question">¿Cómo puedo crear una nueva factura en Contasmart?</div>
+                <div class="answer">Respuesta a la pregunta 1.</div>
+            </div>
+
+            <div class="faq">
+                <div class="question">¿Pregunta 2?</div>
+                <div class="answer">Respuesta a la pregunta 2.</div>
+            </div>
+
+            <div class="faq">
+                <div class="question">¿Pregunta 3?</div>
+                <div class="answer">Respuesta a la pregunta 3.</div>
+            </div>
+            <div class="faq">
+                <div class="question">¿Pregunta 4?</div>
+                <div class="answer">Respuesta a la pregunta 3.</div>
+            </div>
+            <div class="faq">
+                <div class="question">¿Pregunta 5?</div>
+                <div class="answer">Respuesta a la pregunta 3.</div>
+            </div>
         </div>
 
-        <div class="faq">
-            <div class="question">¿Pregunta 2?</div>
-            <div class="answer">Respuesta a la pregunta 2.</div>
-        </div>
-
-        <div class="faq">
-            <div class="question">¿Pregunta 3?</div>
-            <div class="answer">Respuesta a la pregunta 3.</div>
-        </div>
     </div>
     <script>
         var questions = document.getElementsByClassName('question');
-    
-    for (var i = 0; i < questions.length; i++) {
-      questions[i].addEventListener('click', function() {
-        var answer = this.nextElementSibling;
-        if (answer.style.display === 'none') {
-          answer.style.display = 'block';
-        } else {
-          answer.style.display = 'none';
+
+        for (var i = 0; i < questions.length; i++) {
+            questions[i].addEventListener('click', function () {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === 'none') {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
         }
-      });
-    }
     </script>
 </body>
 <footer>
