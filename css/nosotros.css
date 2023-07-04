@@ -68,8 +68,6 @@ header {
 }
 
 .divpreguntas {
-  margin-top: 100px;
-  margin-bottom: 100px;
   padding: 50px;
 }
 
@@ -96,26 +94,56 @@ header {
 .faq {
   margin-bottom: 10px;
   border-width: 5px;
-  border-style: solid;
-  border-image: linear-gradient(to right, #205292, #0f5fc6, #205292) 1;
-  width: max-content;
-  padding: 10px;
+
 }
 
 .question {
+  margin-top: 20px;
   cursor: pointer;
   font-weight: bold;
+  background-image: linear-gradient(100deg, #205292, #0f5fc6, #205292);
+  padding: 5px 20px;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.question:hover {
+  background: #ffffff;
+  color: #205292;
+  transform: scale(1.05);
 }
 
 .answer {
   display: none;
-  margin-top: 5px;
+  margin-top: -3px;
   animation-name: slideDown;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #205292, #0f5fc6, #205292) 1;
+  padding: 0px 25px 10px;
+  color: #205292;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 525px;
 }
 
+.nosotrosimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 40%;
+}
+
+.nosotrosimg1 {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: -webkit-fill-available;
+}
 
 footer {
   background-image: linear-gradient(150deg,
@@ -125,6 +153,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: -webkit-fill-available;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-links {
@@ -165,9 +197,10 @@ footer {
 
 @keyframes slideDown {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
