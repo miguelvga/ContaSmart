@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro-empresa.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Empresa</title>
+</head>
+<header>
+    <div class="container">
+        <div class="left">
+            <img class="logo" src="img/logod.png" alt="all" href="index.html" />
+            <a style="color: white; text-decoration: none" href="index.html">ContaSmart</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="h2empresa">
+        <form>
+            <h2 class="tituloh">Registro de Empresa</h2>
+            <div class="form-group">
+                <label class="form-label" for="nombre">Nombre de la empresa:</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="rfc">RFC (Registro Federal de Contribuyentes):</label>
+                <input class="form-control" type="text" id="rfc" name="rfc" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="direccion">Dirección fiscal:</label>
+                <input class="form-control" type="text" id="direccion" name="direccion" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="telefono">Teléfono:</label>
+                <input class="form-control" type="text" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="correo">Correo electrónico:</label>
+                <input class="form-control" type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="actividad">Actividad principal de la empresa:</label>
+                <input class="form-control" type="text" id="actividad" name="actividad" required>
+            </div>
+            <h3 class="tituloh">Régimen Fiscal</h3>
+            <p style="color: #999;">Selecciona el régimen fiscal de tu empresa:</p>
+            <select class="form-select" id="regimen" name="regimen" required>
+                <option value="general">Régimen General</option>
+                <option value="pequenos_contribuyentes">Régimen de Pequeños Contribuyentes (REPECO)</option>
+                <option value="actividades_agricolas">Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y
+                    Pesqueras</option>
+                <option value="sueldos_salarios">Régimen de Sueldos y Salarios</option>
+            </select>
+            <h3 class="tituloh">Cuenta Bancaria</h3>
+            <div class="form-group">
+                <label class="form-label" for="banco">Banco:</label>
+                <input class="form-control" type="text" id="banco" name="banco" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="cuenta">Número de cuenta:</label>
+                <input class="form-control" type="text" id="cuenta" name="cuenta" required>
+            </div>
+            <h3 class="tituloh">Datos del Representante Legal</h3>
+            <div class="form-group">
+                <label class="form-label" for="nombre_rep">Nombre completo:</label>
+                <input class="form-control" type="text" id="nombre_rep" name="nombre_rep" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="rfc_rep">RFC del Representante Legal:</label>
+                <input class="form-control" type="text" id="rfc_rep" name="rfc_rep" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="curp_rep">CURP del Representante Legal:</label>
+                <input class="form-control" type="text" id="curp_rep" name="curp_rep" required>
+            </div>
+            <div class="registrobtn">
+                <a href="#" style="text-decoration: none;"><button class="bttnusuario"><span>Registrar</span></button></a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Acerca de nosotros</a>
+    </div>
+    <section class="buttons">
+        <p>Nuestras Redes Sociales</p>
+        <a href="https://www.facebook.com/profile.php?id=100094040837205"><img src="img/icons8-facebook-30azul.png"
+                alt="facebook"></a>
+        <a href="https://twitter.com/SmartTwittC"><img src="img/icons8-twitter-30azul.png" alt="twitter"></a>
+        <a href="#"><img src="img/icons8-youtube-play-30azul.png" alt="youtube"></a>
+    </section>
+</footer>
+
+</html>

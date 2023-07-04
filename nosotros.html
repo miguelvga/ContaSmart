@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Nosotros</title>
+</head>
+<header>
+    <div class="container">
+        <div class="left">
+            <img class="logo" src="img/logod.png" alt="all" href="index.html" />
+            <a style="color: white; text-decoration: none" href="index.html">ContaSmart</a>
+        </div>
+        <div class="right">
+            <a href="login.html" style="text-decoration: none;"><button
+                    class="bttnusuario"><span>Usuario</span></button></a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div>
+        <div class="divpreguntas">
+            <h1 class="h1preguntas">Preguntas Frecuentes</h1>
+            <p class="ppreg">Si tienes dudas o necesitas consultar algo, puedes llamar al <b class="spanpreg">801 00 45
+                    810</b></p>
+        </div>
+        <div class="faq">
+            <div class="question">¿Pregunta 1?</div>
+            <div class="answer">Respuesta a la pregunta 1.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">¿Pregunta 2?</div>
+            <div class="answer">Respuesta a la pregunta 2.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">¿Pregunta 3?</div>
+            <div class="answer">Respuesta a la pregunta 3.</div>
+        </div>
+    </div>
+    <script>
+        var questions = document.getElementsByClassName('question');
+    
+    for (var i = 0; i < questions.length; i++) {
+      questions[i].addEventListener('click', function() {
+        var answer = this.nextElementSibling;
+        if (answer.style.display === 'none') {
+          answer.style.display = 'block';
+        } else {
+          answer.style.display = 'none';
+        }
+      });
+    }
+    </script>
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Acerca de nosotros</a>
+    </div>
+    <section class="buttons">
+        <p>Nuestras Redes Sociales</p>
+        <a href="https://www.facebook.com/profile.php?id=100094040837205"><img src="img/icons8-facebook-30azul.png"
+                alt="facebook"></a>
+        <a href="https://twitter.com/SmartTwittC"><img src="img/icons8-twitter-30azul.png" alt="twitter"></a>
+        <a href="#"><img src="img/icons8-youtube-play-30azul.png" alt="youtube"></a>
+    </section>
+</footer>
+
+</html>
